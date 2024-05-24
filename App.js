@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>"My name is Stephanie Awurabena Dunyo".</Text>
+      <Text style={styles.largeText}>"My name is <Text>  Stephanie Awurabena Dunyo </Text> ".</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +17,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  largeText: {
+fontSize:24
+  }
 });
